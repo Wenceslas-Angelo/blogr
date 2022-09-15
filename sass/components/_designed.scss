@@ -1,0 +1,55 @@
+.designed,
+.powerfull {
+  margin-top: 7rem;
+  &__content {
+    @media screen and (min-width: 991px) {
+      display: flex;
+      flex-direction: row-reverse;
+      padding: 5rem 2rem;
+    }
+  }
+  &__image {
+    margin: 2rem 0;
+    width: 100%;
+    padding: 1rem;
+    @media screen and (min-width: 991px) {
+      width: 127rem;
+      margin-right: -20rem;
+      margin-top: -15rem;
+    }
+    img {
+      width: 100%;
+    }
+    &--mobile {
+      @media screen and (min-width: 991px) {
+        display: none;
+      }
+    }
+    &--desktop {
+      @media screen and (max-width: 992px) {
+        display: none;
+      }
+    }
+  }
+
+  &__text {
+    @media screen and (min-width: 991px) {
+      width: 130rem;
+    }
+    &__item {
+      text-align: center;
+      @media screen and (min-width: 376px) {
+        text-align: left;
+      }
+      h2 {
+        font-size: 3rem;
+        color: $very-dark-gray-blue;
+      }
+      p {
+        font-size: 1.7rem;
+        padding: 2rem 0;
+        color: $very-dark-grayish-blue;
+      }
+    }
+  }
+}

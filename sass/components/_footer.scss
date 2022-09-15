@@ -1,0 +1,37 @@
+.footer {
+  background-color: $very-dark-black-blue;
+  color: $grayish-blue;
+  padding: 5rem 2rem;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  @media screen and (max-width: 600px) {
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  border-radius: 0 10rem 0 0;
+
+  &__item {
+    @media screen and (max-width: 600px) {
+      padding: 2rem;
+      text-align: center;
+    }
+    display: flex;
+    flex-direction: column;
+    padding: 0 2rem;
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 3rem;
+    }
+
+    a {
+      color: $grayish-blue;
+      font-size: 1.5rem;
+      padding: 1rem 0;
+    }
+  }
+}
